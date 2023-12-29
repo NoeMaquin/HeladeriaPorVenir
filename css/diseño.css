@@ -1,0 +1,139 @@
+/* Estilos para la sección Header */
+header {
+  background-color: #333; /* Cambia el color de fondo a tu elección */
+  color: #fff; /* Cambia el color del texto a tu elección */
+  padding: 10px; /* Espaciado interno */
+  display: flex; /* Para alinear elementos horizontalmente */
+  justify-content: space-between; /* Para distribuir los elementos a lo largo del header */
+  align-items: center; /* Para centrar verticalmente los elementos */
+  align-content: center;
+}
+/* Estilos para la primera imagen */
+.imagen1 {
+  width: 50px;
+  height: 50px; /* Altura automática para mantener la proporción */
+}
+#contenedor-imagen {
+  text-align: center; /* Centrar horizontalmente el contenido */
+}
+/* Estilos para la segunda imagen */
+#imagen2 {
+  width: 700px;
+  height: 350px;
+  font-size: 100px;
+  position: relative;
+  transition: transform 0.9s ease, background-color 0.3s ease;}
+#imagen2:hover{
+  transform: scale(1.2);}
+#texto-superpuesto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
+  color:darkred;
+  background-color: rgba(204, 204, 204, 0.5); /* Gris semi-transparente con un valor alfa de 0.5 */
+  padding: 20px;
+  display: none;}
+#imagen2:hover + #texto-superpuesto {
+  display: block;}
+#imagen3 {
+  width: 100px;
+  height: auto; /* Altura automática para mantener la proporción */
+  margin-inline: 50px;
+  border: 20px solid #ccc;}
+#imagen4 {
+  width: 100px;
+  height: auto; /* Altura automática para mantener la proporción */
+  margin-inline: 400px;
+  border: 20px solid #ccc;
+  margin-left: 0px; /* Agregar un margen izquierdo para separar la imagen del texto */
+  margin-inline: 50px;/*sirve para  margenes entre lineas*/}
+.container {
+  display: flex;
+  align-items: center;
+  border-color:black;}
+#primertext {
+  font-family: Cambria;}
+.nube {
+  background-color: #ccc; /* Color de fondo gris */
+  padding: 10px; /* Espacio interior para el contenido */
+  border-radius: 10px; /* Bordes redondeados para crear el efecto de nube */
+  display: inline-block; /* Hacer que la nube tenga el ancho justo para el contenido */
+  transition: transform 0.9s ease, background-color 0.3s ease;}
+.nube1 {
+  background-color: #ccc; /* Color de fondo gris */
+  padding: 10px; /* Espacio interior para el contenido */
+  border-radius: 10px; /* Bordes redondeados para crear el efecto de nube */
+  display: inline-block; /* Hacer que la nube tenga el ancho justo para el contenido */
+  margin-left: 80px; /* Margen derecho de 20 píxeles */
+  transition: transform 0.9s ease, background-color 0.3s ease;}
+  .nube2 {
+    background-color: #ccc; /* Color de fondo gris */
+    padding: 5px; /* Espacio interior para el contenido */
+    border-radius: 10px; /* Bordes redondeados para crear el efecto de nube */
+    display: block; /* Hacer que la nube sea un bloque de nivel */
+    margin-left: 80px; /* Margen derecho de 20 píxeles */
+    transition: transform 0.9s ease, background-color 0.3s ease;
+  }
+  
+.nube2:hover {
+  transform: scale(1.1);
+}
+.nube:hover {
+  transform: scale(1.1);
+}
+.nube1:hover {
+  transform: scale(1.1);
+}
+footer {
+  margin-right:160px;
+  background-color: #333; /* Cambia el color de fondo a tu elección */
+  color: #fff; /* Cambia el color del texto a tu elección */
+  padding: 10px; /* Espaciado interno */
+  display: flex; /* Para alinear elementos horizontalmente */
+  justify-content: space-between; /* Para distribuir los elementos a lo largo del header */
+ /* align-items: center;  Para centrar verticalmente los elementos */
+
+}
+/* Estilos para las columnas del Footer */
+.footer-column {
+  flex: 1; /* Distribuye el espacio de manera equitativa entre las columnas */
+  padding: 10px; /* Espaciado interno de las columnas */
+}
+/* Estilos para el logo en la primera columna */
+.footer-column img {
+  max-width: 100%;
+  height: auto;
+}
+/* Estilos para los encabezados de las listas en las columnas 2 y 3 */
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+/* Estilos para las listas en las columnas 2 y 3 */
+.footer-column ul {
+  list-style-type: none; /* Elimina los puntos de lista */
+  padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+.footer-column ul li {
+  margin-bottom: 5px; /* Espacio entre elementos de la lista */
+}
+/* Estilos para los botones de redes sociales en la cuarta columna */
+.social-buttons {
+  display: flex;
+}
+.social-buttons a {
+  display: inline-block;
+  margin-right: 10px; /* Espacio entre botones de redes sociales */
+}
+/* Estilos para los iconos de redes sociales (asumiendo que son imágenes) */
+.social-buttons img {
+  width: 30px; /* Cambia el tamaño de los iconos de redes sociales */
+  height: 30px;
+  border-radius: 50%; /* Añade esquinas redondeadas */
+  transition: transform 0.3s ease; /* Agrega una transición suave al pasar el mouse sobre los iconos */
+}
+.social-buttons img:hover {
+  transform: scale(1.2); /* Aumenta el tamaño de los iconos al pasar el mouse */
+}
